@@ -17,6 +17,7 @@ namespace Swithc__zadanie
         {
             InitializeComponent();
         }
+        //Amogus
         int[,] masbig = new int[7, 7];
         int[] mas1 = new int[7];
         int[] mas2 = new int[7];
