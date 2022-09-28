@@ -30,7 +30,7 @@ namespace Swithc__zadanie
             int width = masbig.GetLength(1);
 
             Random ran = new Random();
-
+            //Заполнение и вывод двумерного массива
             for (int y = 0; y < height; y++)
             {
                 for (int x = 0; x < width; x++)
