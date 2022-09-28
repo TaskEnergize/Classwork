@@ -59,7 +59,7 @@ namespace Swithc__zadanie
             {
                 mas1[a] = masbig[i, i];
                 a++;
-            }
+            } //Создаём для главной диагонали отдельный массив
 
             a = 0;
 
@@ -69,7 +69,7 @@ namespace Swithc__zadanie
                 a++;
                 a2++;
 
-            }
+            } //Создаём для второстепенной диагонали отдельный массив
 
             int g; //сохранение макс числа
 
@@ -79,7 +79,7 @@ namespace Swithc__zadanie
             {
                 g = mas1.Max();
                 h = 1;
-            }
+            } //Ищет в каком массиве самое большое число
             if (mas1.Max() < mas2.Max())
             {
                 g = mas2.Max();
