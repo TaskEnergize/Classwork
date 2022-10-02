@@ -25,12 +25,13 @@ namespace Swithc__zadanie
             dataGridView1.RowCount = 7;
             dataGridView1.ColumnCount = 7;
 
-
             int height = masbig.GetLength(0);
             int width = masbig.GetLength(1);
 
             Random ran = new Random();
+
             //Заполнение и вывод двумерного массива
+
             for (int y = 0; y < height; y++)
             {
                 for (int x = 0; x < width; x++)
