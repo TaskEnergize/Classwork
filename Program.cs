@@ -16,7 +16,7 @@ namespace Swithc__zadanie
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Zadanie8());
+            Application.Run(new Zadanie8_1());
         }
     }
 }

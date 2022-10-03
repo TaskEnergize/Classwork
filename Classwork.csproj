@@ -99,6 +99,12 @@
     <Compile Include="Zadanie8.Designer.cs">
       <DependentUpon>Zadanie8.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zadanie8_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadanie8_1.Designer.cs">
+      <DependentUpon>Zadanie8_1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dni.resx">
       <DependentUpon>Dni.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +137,9 @@
     </Compile>
     <EmbeddedResource Include="Zadanie8.resx">
       <DependentUpon>Zadanie8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadanie8_1.resx">
+      <DependentUpon>Zadanie8_1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
