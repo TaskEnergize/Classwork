@@ -49,10 +49,6 @@ namespace Swithc__zadanie
                 }
             }
 
-            
-
-
-
             int a = 0;
             for (int y = 0; y < height; y++)
             {
@@ -106,6 +102,7 @@ namespace Swithc__zadanie
                     massort[y] = masbig[y, x];
 
                 }
+
                 Array.Sort(massort);
 
                 for (int y = 0; y < height; y++)
@@ -122,6 +119,7 @@ namespace Swithc__zadanie
                     massort[y] = masbig[y, x];
 
                 }
+
                 Array.Sort(massort);
                 Array.Reverse(massort);
 
@@ -130,8 +128,6 @@ namespace Swithc__zadanie
                     dataGridView1.Rows[y].Cells[x].Value = massort[y].ToString();
                 }
             }
-
-
 
         }
     }
