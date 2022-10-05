@@ -45,5 +45,7 @@ namespace Swithc__zadanie
             chart1.Series[0].Points.DataBindXY(mas, y1);
             chart1.Series[1].Points.DataBindXY(mas, y2);
         }
+
+        
     }
 }
