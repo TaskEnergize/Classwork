@@ -16,30 +16,22 @@ namespace Swithc__zadanie
         {
             InitializeComponent();
         }
-        private int x1 = 10, y1 = 10, x2 = 550, y2 = 300, x3 = 240, y3 = 230, speed = 5;
+        private int x1 = 10, y1 = 10, x2 = 550, y2 = 300, x3 = 240, y3 = 230, speed = 5, size = 20;
         private bool gor1, ver1, gor2, ver2, gor3, ver3;
         private Pen pen = new Pen(Color.Gold, 2);
         private Point abspos1;
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (timer1.Enabled)
-                timer1.Enabled = false;
-            else
-                timer1.Enabled = true;
-        }
-
         private void Form_Load(object sender, EventArgs e)
         {
-            
+            timer1.Enabled = true;
         }
 
         private void Form_paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            g.DrawEllipse(pen, x1, y1, 20, 20);
-            g.DrawEllipse(pen, x2, y2, 20, 20);
-            g.DrawEllipse(pen, x3, y3, 20, 20);
+            g.DrawEllipse(pen, x1, y1, size, size);
+            g.DrawEllipse(pen, x2, y2, size, size);
+            g.DrawEllipse(pen, x3, y3, size, size);
         }
         private Point realabs1()
         {
@@ -51,12 +43,12 @@ namespace Swithc__zadanie
             for (int i1 = 0; i1 < speed; i1++)
             {
                 
-                if (x1 >= ClientSize.Width)
+                if (x1 + size >= ClientSize.Width)
                 {
                     gor1 = false;
                 }
 
-                if (x1 <= 0)
+                if (x1 + size <= 0)
                 {
                     gor1 = true;
                 }
@@ -70,12 +62,12 @@ namespace Swithc__zadanie
                     x1 = x1 - speed;
                 }
                 
-                if (y1 >= ClientSize.Height)
+                if (y1 + size >= ClientSize.Height)
                 {
                     ver1 = false;
                 }
 
-                if (y1 < 0)
+                if (y1 + size < 0)
                 {
                     ver1 = true;
                 }
@@ -93,12 +85,12 @@ namespace Swithc__zadanie
             for (int i2 = 0; i2 < speed; i2++)
             {
 
-                if (x2 >= ClientSize.Width)
+                if (x2 + size >= ClientSize.Width)
                 {
                     gor2 = false;
                 }
 
-                if (x2 < 0)
+                if (x2 + size <= 0)
                 {
                     gor2 = true;
                 }
@@ -112,12 +104,12 @@ namespace Swithc__zadanie
                     x2 = x2 - speed;
                 }
 
-                if (y2 >= ClientSize.Height)
+                if (y2 + size >= ClientSize.Height)
                 {
                     ver2 = false;
                 }
 
-                if (y2 < 0)
+                if (y2 + size <= 0)
                 {
                     ver2 = true;
                 }
@@ -135,12 +127,12 @@ namespace Swithc__zadanie
             for (int i3 = 0; i3 < speed; i3++)
             {
 
-                if (x3 >= ClientSize.Width)
+                if (x3 + size >= ClientSize.Width)
                 {
                     gor3 = false;
                 }
 
-                if (x3 < 0)
+                if (x3 + size <= 0)
                 {
                     gor3 = true;
                 }
@@ -154,12 +146,12 @@ namespace Swithc__zadanie
                     x3 = x3 - speed;
                 }
 
-                if (y3 >= ClientSize.Height)
+                if (y3 + size >= ClientSize.Height)
                 {
                     ver3 = false;
                 }
 
-                if (y3 < 0)
+                if (y3 + size <= 0)
                 {
                     ver3 = true;
                 }
