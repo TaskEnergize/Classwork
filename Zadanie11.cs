@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,8 +19,8 @@ namespace Swithc__zadanie
         }
         private int x1 = 10, y1 = 10, x2 = 550, y2 = 300, x3 = 240, y3 = 230, speed = 5, size = 20;
         private bool gor1, ver1, gor2, ver2, gor3, ver3;
-        private Pen pen = new Pen(Color.Gold, 2);
         private Point abspos1;
+        private SolidBrush sb = new SolidBrush(Color.Gold);
 
         private void Form_Load(object sender, EventArgs e)
         {
@@ -29,9 +30,10 @@ namespace Swithc__zadanie
         private void Form_paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            g.DrawEllipse(pen, x1, y1, size, size);
-            g.DrawEllipse(pen, x2, y2, size, size);
-            g.DrawEllipse(pen, x3, y3, size, size);
+            g.FillEllipse(sb, x1, y1, size, size);
+            g.FillEllipse(sb, x2, y2, size, size);
+            g.FillEllipse(sb, x3, y3, size, size);
+
         }
         private Point realabs1()
         {
