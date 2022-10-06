@@ -17,9 +17,18 @@ namespace Swithc__zadanie
         {
             InitializeComponent();
         }
-        private int x1 = 10, y1 = 10, x2 = 550, y2 = 300, x3 = 240, y3 = 230, speed = 5, size = 20;
-        private bool gor1, ver1, gor2, ver2, gor3, ver3;
+        private int     x1 = 10, y1 = 10, 
+                        x2 = 550, y2 = 300, 
+                        x3 = 240, y3 = 230, 
+                        speed = 3, 
+                        size = 10;
+
+        private bool    gor1, ver1, 
+                        gor2, ver2, 
+                        gor3, ver3;
+
         private Point abspos1;
+
         private SolidBrush sb = new SolidBrush(Color.Gold);
 
         private void Form_Load(object sender, EventArgs e)
@@ -33,6 +42,10 @@ namespace Swithc__zadanie
             g.FillEllipse(sb, x1, y1, size, size);
             g.FillEllipse(sb, x2, y2, size, size);
             g.FillEllipse(sb, x3, y3, size, size);
+
+        }
+        private void test()
+        {
 
         }
         private Point realabs1()
@@ -57,11 +70,11 @@ namespace Swithc__zadanie
 
                 if (gor1)
                 {
-                    x1 = x1 + speed;
+                    x1 += speed;
                 }
                 else
                 {
-                    x1 = x1 - speed;
+                    x1 -= speed;
                 }
                 
                 if (y1 + size >= ClientSize.Height)
@@ -76,11 +89,11 @@ namespace Swithc__zadanie
 
                 if (ver1)
                 {
-                    y1 = y1 + speed;
+                    y1 += speed;
                 }
                 else
                 {
-                    y1 = y1 - speed;
+                    y1 -= speed;
                 }
             }
 
@@ -99,11 +112,11 @@ namespace Swithc__zadanie
 
                 if (gor2)
                 {
-                    x2 = x2 + speed;
+                    x2 += speed;
                 }
                 else
                 {
-                    x2 = x2 - speed;
+                    x2 -= speed;
                 }
 
                 if (y2 + size >= ClientSize.Height)
@@ -118,11 +131,11 @@ namespace Swithc__zadanie
 
                 if (ver2)
                 {
-                    y2 = y2 + speed;
+                    y2 += speed;
                 }
                 else
                 {
-                    y2 = y2 - speed;
+                    y2 -= speed;
                 }
             }
 
@@ -141,11 +154,11 @@ namespace Swithc__zadanie
 
                 if (gor3)
                 {
-                    x3 = x3 + speed;
+                    x3 += speed;
                 }
                 else
                 {
-                    x3 = x3 - speed;
+                    x3 -= speed;
                 }
 
                 if (y3 + size >= ClientSize.Height)
@@ -160,11 +173,11 @@ namespace Swithc__zadanie
 
                 if (ver3)
                 {
-                    y3 = y3 + speed;
+                    y3 += speed;
                 }
                 else
                 {
-                    y3 = y3 - speed;
+                    y3 -= speed;
                 }
             }
 
