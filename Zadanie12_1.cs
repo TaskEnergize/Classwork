@@ -30,7 +30,7 @@ namespace Swithc__zadanie
 
         private void цветФонаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (colorDialog1.ShowDialog()==DialogResult.OK)
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 richTextBox1.BackColor = colorDialog1.Color;
             }
@@ -51,7 +51,7 @@ namespace Swithc__zadanie
             openFileDialog1.InitialDirectory = @"c:\";
             openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             openFileDialog1.FilterIndex = 2;
-            if (openFileDialog1.ShowDialog()==DialogResult.OK)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
@@ -59,7 +59,7 @@ namespace Swithc__zadanie
                     {
                         using (myStream)
                         {
-                            richTextBox1.LoadFile(openFileDialog1.FileName,RichTextBoxStreamType.PlainText);
+                            richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
                         }
                     }
                 }
