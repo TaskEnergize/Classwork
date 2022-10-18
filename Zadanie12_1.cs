@@ -65,7 +65,7 @@ namespace Swithc__zadanie
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ошибка: не возможно проитал этот файл на диске: " + ex.Message);
+                    MessageBox.Show("Ошибка: не возможно прочитать этот файл на диске: " + ex.Message);
                 }
             }
         }
