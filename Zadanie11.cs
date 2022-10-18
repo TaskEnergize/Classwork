@@ -17,6 +17,7 @@ namespace Swithc__zadanie
         {
             InitializeComponent();
         }
+
         private int     x1 = 10, y1 = 10, 
                         x2 = 550, y2 = 300, 
                         x3 = 240, y3 = 230, 
@@ -26,8 +27,6 @@ namespace Swithc__zadanie
         private bool    gor1, ver1, 
                         gor2, ver2, 
                         gor3, ver3;
-
-        private Point abspos1;
 
         private SolidBrush sb = new SolidBrush(Color.Gold);
 
@@ -44,15 +43,7 @@ namespace Swithc__zadanie
             g.FillEllipse(sb, x3, y3, size, size);
 
         }
-        private void test()
-        {
-
-        }
-        private Point realabs1()
-        {
-            abspos1 = new Point(Math.Abs(x1), Math.Abs(y1));
-            return abspos1;
-        }
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
             for (int i1 = 0; i1 < speed; i1++)

@@ -74,6 +74,24 @@
     <Compile Include="Zadanie11.Designer.cs">
       <DependentUpon>Zadanie11.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zadanie12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadanie12.Designer.cs">
+      <DependentUpon>Zadanie12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadanie12_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadanie12_1.Designer.cs">
+      <DependentUpon>Zadanie12_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadanie13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadanie13.Designer.cs">
+      <DependentUpon>Zadanie13.cs</DependentUpon>
+    </Compile>
     <Compile Include="Zadanie4.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +154,12 @@
     <EmbeddedResource Include="Zadanie11.resx">
       <DependentUpon>Zadanie11.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Zadanie12.resx">
+      <DependentUpon>Zadanie12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadanie12_1.resx">
+      <DependentUpon>Zadanie12_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Zadanie4.resx">
       <DependentUpon>Zadanie4.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +183,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Zadanie8.resx">
       <DependentUpon>Zadanie8.cs</DependentUpon>
@@ -181,6 +206,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G3aRgVw4YmbERMNCtzuku1NDz4CgtcmMPU-JqV4yDmSiOrPUD4TtQa7NiXqtjADC9UIVDpZ0s4Mb_6c6bnHvbNui.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
